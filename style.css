@@ -1,6 +1,7 @@
 body {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     background-color: white;
     font-family: sans-serif;
     font-size: 16px;
@@ -118,6 +119,7 @@ hr {
     vertical-align: top;
     border-left: 2px solid #cfcfcf;
     position: relative;
+    min-width: 35px;
 }
 .ico img {
     border-radius: 5px;
@@ -125,6 +127,13 @@ hr {
     max-width: 80px;
     margin-left: 10px;
 }
+/* @media(min-width: 768px) { */
+    .tag {
+    /* display: flex;
+    justify-content: center; */
+    padding-left: 3px;
+    }
+/* } */
 .desc {
     grid-column: span 10;
     vertical-align: top;
@@ -135,7 +144,11 @@ hr {
 .desc span {
     font-size: 12px;
 }
-
+@media (max-width: 601px) {
+    .desc span{
+        font-size: 8px;
+    }
+}
 .entry-dot {
     position: absolute;
     top: 0px;
