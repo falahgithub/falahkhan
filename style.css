@@ -29,10 +29,15 @@ body {
 /* Props */
 #dhead {
     margin-top: 20px;
+    /* width: 90%; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 #dpic {
     grid-column: span 6;
     text-align: right;
+    align-self: center;
 }
 #ddesc {
     padding-top: 40px;
@@ -57,11 +62,20 @@ h1 {
     margin: 0;
 }
 
-h2 {
+h3 {
     font-weight: normal;
     font-style: italic;
     color: #999;
     font-size: 18px;
+    padding: 0;
+    margin: 5px 0 10px 0;
+    width: 100%;
+}
+h2 {
+    font-weight: normal;
+    font-style: italic;
+    /* color: #99999910; */
+    font-size: 20px;
     padding: 0;
     margin: 5px 0 10px 0;
 }
@@ -69,12 +83,12 @@ h2 {
     h1 {
         font-size: 24px;
     }
-    h2{
+    h3{
         font-size: 14px;
     }
 }
 @media (min-width: 992px) {
-    h2 {
+    h3 {
         max-width: 300px;
     }
 }
